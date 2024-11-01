@@ -11,7 +11,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 Our implementation of the multiplier took in two 4-inputs, m and q, and produced an 8-bit output, p, representing their product. We then genereated partial products by ANDing each bit of m with all bits of q and used a series of full adders, to sum these partial products. Each adder handled the addition of bits and carry-out/carry-in signals from the previous stage, ensuring proper alignment of the products. 
 
-![alt text](image.png)
+![4x4 array multiplier](image.png)
 
 ## How to test
 
