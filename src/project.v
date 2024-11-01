@@ -20,11 +20,8 @@ module tt_um_b_6_array_multiplier (
 
   wire [3:0] m = ui_in [7:4];
   wire [3:0] q = ui_in [3:0];
-  wire [3:0] p;
+  wire [7:0] p;
 
-
-    input [3:0] m, q;
-    output [7:0] p;
     wire C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11;
     wire sum1, sum2, sum3, sum4, sum5, sum6;
 
@@ -44,7 +41,7 @@ module tt_um_b_6_array_multiplier (
     fulladd fa12 (m[3] & q[3], C8, C11, p[6], p[7]);    
 
   assign uo_out = p;
-  
+
   assign uio_out = 0;
   assign uio_oe  = 0;
 
